@@ -16,6 +16,4 @@ public interface FlightRepository extends CrudRepository<Flights, Long> {
 	List<Flights> findBySource(String source, Sort sort);
 
 	List<Flights> findByDestination(String destination, Sort sort);
-	
-	List<Flights> findById(long id);
 }
